@@ -1,7 +1,15 @@
+import Header from "../components/header";
+import Button from "../components/button";
+import MyTable from "../components/table";
+
 function Farmland() {
   return (
     <>
-      <h1>Hi Farmlands</h1>
+
+      <Button />
+      <Button />
+
+      <MyTable />
     </>
   );
 }

@@ -6,7 +6,7 @@ import API_BASE_URL from '../config';
 
 
 
-function Farmers() {
+function CropCycles() {
   return (
     <>
      <Button/>
@@ -19,4 +19,4 @@ function Farmers() {
   );
 }
 
-export default Farmers;
+export default CropCycles;

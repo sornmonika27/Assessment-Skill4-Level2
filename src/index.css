@@ -159,7 +159,7 @@ i {
 }
 
 #sidebar nav a.active {
-  background: rgb(13, 137, 185);
+  background: rgba(0, 0, 255, 0.733);
   color: white;
   
 }

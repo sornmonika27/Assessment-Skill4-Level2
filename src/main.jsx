@@ -6,7 +6,7 @@ import Farmers from "./pages/Farmer";
 import "./index.css";
 import App from "./App";
 import Farmland from "./pages/Farmland"
-import CropCycles from "./pages/CropCycles";
+
 
 
 
@@ -28,10 +28,10 @@ const router = createBrowserRouter([
         path: "/farmlands",
         element: <Farmland />
       },
-      {
-        path: "/cropCycles",
-        element: <CropCycles />
-      },
+      // {
+      //   path: "/cropCycles",
+      //   element: <CropCycles />
+      // },
      
     ]
   },

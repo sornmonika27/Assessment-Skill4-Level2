@@ -2,8 +2,10 @@ import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
+    
+    
     <div id="sidebar">
-      <h1>Agriculture Admin</h1>
+      
       <nav>
         <ul>
           <li>
@@ -15,6 +17,13 @@ function Sidebar() {
           <li>
             <NavLink to="/farmlands">Farmlands</NavLink>
           </li>
+          <li>
+            <NavLink to="/crpoCycles">Crop Cycles</NavLink>
+          </li>
+          <li>
+            <NavLink to="/acounrt">Accounrt</NavLink>
+          </li>
+       
         </ul>
       </nav>
     </div>

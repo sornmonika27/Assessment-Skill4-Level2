@@ -12,6 +12,10 @@ const Dashboard = () => {
       try {
         const farmersData = await getTotalFarmers();
         setTotalFarmers(farmersData.totalFarmers);
+
+
+
+        
       } catch (error) {
         console.error('Error fetching data:', error);
       }

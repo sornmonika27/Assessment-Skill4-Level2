@@ -5,7 +5,9 @@ import Dashboard from "./pages/Dashboard";
 import Farmers from "./pages/Farmer";
 import "./index.css";
 import App from "./App";
-import Farmland from "./pages/Farmland";
+import Farmland from "./pages/Farmland"
+
+
 
 
 const router = createBrowserRouter([
@@ -25,7 +27,12 @@ const router = createBrowserRouter([
       {
         path: "/farmlands",
         element: <Farmland />
-      }
+      },
+      // {
+      //   path: "/cropCycles",
+      //   element: <CropCycles />
+      // },
+     
     ]
   },
 

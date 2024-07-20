@@ -1,6 +1,7 @@
 import '../styles/Farmer.css';
 import API_BASE_URL from '../config';
 import { useEffect, useState } from 'react';
+import Dropdown from '../components/Dropdownprovince-District'
 
 function Farmers() {
   const [farmers, setFarmers] = useState([]);
@@ -21,6 +22,7 @@ function Farmers() {
 
   return (
     <>
+    <Dropdown/>
       <table>
         <thead>
           <tr>

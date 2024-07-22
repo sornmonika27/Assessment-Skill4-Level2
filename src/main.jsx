@@ -7,7 +7,8 @@ import "./index.css";
 import App from "./App";
 import Farmland from "./pages/Farmland"
 import Cropcycle from "../src/pages/Cropcycle"
-import Acounrt from "./pages/Account";
+import Account from "./pages/Account";
+
 
 
 
@@ -35,8 +36,8 @@ const router = createBrowserRouter([
         element: <Cropcycle />
       },
       {
-        path: "/acounrt",
-        element: <Acounrt />
+        path: "/account",
+        element: <Account />
       },
      
     ]

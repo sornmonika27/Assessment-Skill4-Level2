@@ -21,7 +21,7 @@ function Sidebar() {
             <NavLink to="/cropcycles">Crop Cycles</NavLink>
           </li>
           <li>
-            <NavLink to="/acounrt">Accounrt</NavLink>
+            <NavLink to="/account">Accounrt</NavLink>
           </li>
        
         </ul>

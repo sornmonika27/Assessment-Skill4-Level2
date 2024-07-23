@@ -1,16 +1,16 @@
 
 import '../styles/Farmer.css';
 import React, { useState, useEffect } from 'react';
-import API_BASE_URL from '../config';
+// import API_BASE_URL from '../config';
 import DropDownactive from '../components/drowp';
 
-function useFarmlands() {
+function useCrops() {
   const [farmlands, setFarmlands] = useState([]);
 
   useEffect(() => {
     const fetchFarmlands = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/farmlands`);
+        const response = await fetch("https://agro-admin-dashboard-api.vercel.app/api/crops");
         const data = await response.json();
         setFarmlands(data);
       } catch (error) {
@@ -24,9 +24,9 @@ function useFarmlands() {
   return farmlands;
 }
 
-function Farmland() {
+function Crops() {
   const [statusFilter, setStatusFilter] = useState('All');
-  const farmlands = useFarmlands();
+  const farmlands = useCrops();
 
   const handleFilterChange = (event) => {
     setStatusFilter(event.target.value);
@@ -46,24 +46,18 @@ function Farmland() {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Size</th>
+            <th>Name</th>
             <th>Latitude</th>
-            <th>Longitude</th>
-            <th>Farmer (owner)</th>
-            <th>Status</th>
-            <th>Active</th>
+          
           </tr>
         </thead>
         <tbody>
           {filteredFarmlands.map((farmland, index) => (
             <tr key={farmland.id}>
               <td>{farmland.id}</td>
-              <td>{farmland.size}</td>
-              <td>{farmland.latitude}</td>
-              <td>{farmland.longitude}</td>
-              <td>{farmland.farmer_id}</td>
-              <td>{farmland.status}</td>
-              <td><button id='edit'>Edit</button></td>
+              <td>{farmland.name}</td>
+              <td>{farmland.crop_type_id}</td>
+
             </tr>
           ))}
         </tbody>
@@ -72,4 +66,4 @@ function Farmland() {
   );
 }
 
-export default Farmland;
+export default Crops;
